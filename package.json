@@ -1,5 +1,5 @@
 {
-  "name": "mad-mpvue-wxparse",
+  "name": "mpvue-wxparse-advance",
   "version": "0.6.5",
   "description": "适用于 Mpvue 的微信小程序富文本解析自定义组件，支持HTML及markdown解析",
   "main": "src/wxParse.vue",
@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/F-loat/mpvue-wxParse.git"
+    "url": "git+https://github.com/maxtrunk/mpvue-wxParse.git"
   },
   "keywords": [
     "mpvue",
