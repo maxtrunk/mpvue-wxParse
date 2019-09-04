@@ -12,6 +12,7 @@
 </template>
 
 <script>
+  /* eslint-disable */
 export default {
   name: 'wxParseImg',
   data() {
@@ -44,14 +45,14 @@ export default {
       const { imageheight, imageWidth } = recal;
       const { padding, mode } = this.node.attr;
       const { styleStr } = this.node;
-      const imageHeightStyle = mode === 'widthFix' ? '' : `height: ${imageheight}px; !important`;
+      const imageHeightStyle = mode === 'widthFix' ? '' : `height: ${imageheight}px;`;
       this.newStyleStr = `${styleStr}; ${imageHeightStyle}; width: ${imageWidth}px; padding: 0 ${+padding}px;`;
     },
     // 计算视觉优先的图片宽高
     wxAutoImageCal(originalWidth, originalHeight) {
       // 获取图片的原始长宽
-      const { webPadding, padding } = this.node.attr;
-      const windowWidth = this.node.$screen.width - 2 * webPadding - 2 * padding;
+      const { padding } = this.node.attr;
+      const windowWidth = this.node.$screen.width - (2 * padding);
       const results = {};
 
       if (originalWidth < 60 || originalHeight < 60) {

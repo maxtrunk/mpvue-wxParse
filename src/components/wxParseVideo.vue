@@ -1,18 +1,12 @@
 <template>
   <!--增加video标签支持，并循环添加-->
   <view :class="node.classStr" :style="node.styleStr">
-    <video
-      :class="node.classStr"
-      class="video-video"
-      :src="node.attr.src"
-      :controls="node.attr.controls"
-      :poster="node.attr.poster"
-    >
-    </video>
+    <video :class="node.classStr" class="video-video" :src="node.attr.src"></video>
   </view>
 </template>
 
 <script>
+  /* eslint-disable */
 export default {
   name: 'wxParseVideo',
   props: {
