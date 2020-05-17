@@ -1,6 +1,6 @@
 <template>
     <div class="wxParse" :class="className" v-if="!loading">
-        <block v-for="node of nodes" :key="node.index">
+        <block v-for="(node, index) of nodes" :key="index">
             <wxParseTemplate :node="node"/>
         </block>
     </div>
